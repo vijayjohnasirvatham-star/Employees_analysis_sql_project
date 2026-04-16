@@ -1,113 +1,72 @@
-Employee Data Analysis using SQL
+# Employee Data Analysis using SQL & Power BI
 
-📌 Project Overview
+## 📊 Dashboard Preview
 
-This project demonstrates SQL-based data analysis using an employee management dataset.
-It focuses on querying relational data to extract meaningful business insights.
+### Overview
 
----
+<img width="1160" height="743" alt="Overview" src="https://github.com/user-attachments/assets/36f6a8b9-c992-4f3e-893a-b5360dbbf1bb" />
 
-🗂️ Database Schema
 
-Tables Used
+### Attrition Analysis
 
-employees
+<img width="1166" height="742" alt="Attrition Analysis" src="https://github.com/user-attachments/assets/9976c182-6863-4ce4-a04c-c5311e3ed711" />
 
-- id (Primary Key)
-- name
-- salary
-- dept_id (Foreign Key)
-- manager_id (Self-referencing key)
 
-departments
+### Salary Analysis
 
-- id (Primary Key)
-- dept_name
+<img width="1161" height="742" alt="Salary_Analysis" src="https://github.com/user-attachments/assets/887156dc-3cbc-41a4-a5f8-544c7204ea47" />
 
----
 
-🔗 Relationships
+### Experience Analysis
 
-- Each employee belongs to a department ("dept_id → departments.id")
-- Each employee may have a manager ("manager_id → employees.id")
+<img width="1162" height="742" alt="Experience_Analysis" src="https://github.com/user-attachments/assets/49b689c8-fa52-4018-a97c-a052eec9672c" />
+
+
+### Gender Analysis
+
+<img width="1165" height="741" alt="Gender_Analysis" src="https://github.com/user-attachments/assets/2e2093e8-2dcb-444a-bfe4-709668e82964" />
+
 
 ---
 
-📊 SQL Concepts Covered
+## 📌 Project Overview
 
-- SELECT & WHERE
-- INNER JOIN & LEFT JOIN
-- GROUP BY & HAVING
-- Aggregate Functions (COUNT, SUM, AVG, MAX)
-- Subqueries
-- Window Functions (RANK, DENSE_RANK)
-- Self Join
-- Filtering & Sorting
+This project analyzes employee data to understand workforce trends, salary distribution, and attrition patterns using SQL and Power BI.
 
 ---
 
-📈 Analysis Performed
+## 🧱 Dataset
 
-Basic Queries
+The dataset contains employee-level information including:
 
-- List all employees and departments
-- Filter employees based on salary
-
-Join Operations
-
-- Employees with department names
-- Employees without departments
-- Employees with their managers
-
-Aggregations
-
-- Average salary per department
-- Total salary per department
-- Employee count per department
-
-Advanced Queries
-
-- Department with highest employees
-- Employees earning above/below average salary
-- Second highest salary using DENSE_RANK
-- Top 3 highest salaries
-- Rank employees by salary
-
-Business Insights
-
-- Employees earning more than their managers
-- Managers and their team size
-- Departments with more than one employee
-- Highest salary in each department
+* Department
+* Salary
+* Experience
+* Gender
+* Attrition status
 
 ---
 
-📁 Project Files
+## 🔍 Key Business Questions
 
-- "schema.sql" → Table creation scripts
-- "insert_data.sql" → Sample data insertion
-- "analysis_queries.sql" → SQL queries (20 queries)
-- "README.md" → Project documentation
-
----
-
-🧠 Key Learnings
-
-- Understanding relational database design
-- Writing efficient SQL queries
-- Handling real-world data scenarios
-- Using advanced SQL concepts for analysis
+* Which departments have the highest attrition rate?
+* How are employees distributed across salary ranges?
+* Which departments offer higher average salaries?
+* Does salary increase with experience?
+* What is the gender distribution and salary comparison?
 
 ---
 
-📎 Future Improvements
+## 🛠️ Tools Used
 
-- Add more tables (projects, attendance)
-- Use larger datasets
-- Integrate with visualization tools (Power BI)
+* SQL (Aggregations, CASE, GROUP BY)
+* Power BI (Data Modeling, DAX, Visualization)
 
 ---
 
-👤 Author
+## 📈 Key Insights
 
-Vijay J
+* Certain departments show higher attrition rates indicating retention issues
+* Majority of employees fall in the medium salary range
+* Salary generally increases with experience
+* Gender distribution highlights workforce composition and possible pay differences
